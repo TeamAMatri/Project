@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "389065966780",
+    "firebase_url": "https://libcrawler-909a8.firebaseio.com",
+    "project_id": "libcrawler-909a8",
+    "storage_bucket": "libcrawler-909a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389065966780:android:e4098b738c03b84c88fcb9",
+        "android_client_info": {
+          "package_name": "com.example.libcrawler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389065966780-uiofkujgig23oiop9pke49n2nds5c7tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIOtvkHP-Ow4yI4vBjALaYZfaIwQ22L4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389065966780-uiofkujgig23oiop9pke49n2nds5c7tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
