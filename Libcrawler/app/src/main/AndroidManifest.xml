@@ -11,35 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PasswordActivity"></activity>
         <activity android:name=".Branch" />
-        <activity android:name=".SplashActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-
-        <activity android:name=".Registration"
-            android:label="Registration">
-
-        </activity>
-
-        <activity android:name=".AdminLogin"
-            android:label="Login"/>
-        <activity android:name=".LoginActivity"
-            android:label="Login"/>
-
-        <activity android:name=".MainActivity"
-            android:label="Branch">
-        <!--    <intent-filter>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        -->
         </activity>
+        <activity
+            android:name=".Registration"
+            android:label="Registration"></activity>
+        <activity
+            android:name=".AdminLogin"
+            android:label="Login" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Branch">
 
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
     </application>
 
 </manifest>

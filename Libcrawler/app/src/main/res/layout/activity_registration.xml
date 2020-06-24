@@ -49,18 +49,35 @@
                 android:padding="10dp"
                 android:paddingTop="15dp" />
 
-            <EditText
+           <EditText
                 android:id="@+id/pwd"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/textbox"
                 android:hint="Password"
+               android:drawableRight="@drawable/eye"
                 android:fontFamily="@font/montserrat"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:paddingTop="15dp" />
 
+        <!--    <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#2C470D">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/pwd"
+                    android:padding="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/textbox"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        -->
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
@@ -80,6 +97,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
                 android:background="@drawable/textbox"
+                android:drawableRight="@drawable/roll"
                 android:hint="Roll No"
                 android:inputType="text"
                 android:padding="10dp"

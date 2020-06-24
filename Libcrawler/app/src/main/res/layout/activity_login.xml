@@ -6,31 +6,31 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/colorBg"
-    android:padding="9dp"
+    android:padding="5dp"
     tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:fontFamily="@font/iceberg"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         android:background="@drawable/shape">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="7"
-            android:padding="20dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textSize="30sp"
-                android:fontFamily="@font/iceberg"
-                android:layout_marginTop="100dp"
-                android:gravity="center"
-                android:textColor="@color/colorPrimaryDark"/>
-
+            android:padding="30dp">
 
             <EditText
                 android:layout_width="match_parent"
@@ -40,20 +40,28 @@
                 android:paddingTop="15dp"
                 android:fontFamily="@font/montserrat"
                 android:id="@+id/loginmail"
+                android:drawableRight="@drawable/mail"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/textbox"
-                android:padding="10dp"/>
+                android:padding="10dp">
+                <requestFocus/>
+            </EditText>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Roll No"
-                android:inputType="text"
-                android:paddingTop="15dp"
-                android:fontFamily="@font/montserrat"
-                android:id="@+id/loginroll"
-                android:background="@drawable/textbox"
-                android:padding="10dp"/>
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#2C470D">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/loginpwd"
+                    android:padding="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/textbox"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <Button
@@ -68,7 +76,16 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/shapes"/>
-            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot password?"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:onClick="forgotpassword"/>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -96,11 +113,8 @@
                 android:textSize="24sp"
                 android:onClick="register"
                 android:background="@drawable/shapes"
-                android:layout_marginBottom="24dp"
-                />
+                android:layout_marginBottom="24dp"/>
 
         </LinearLayout>
     </LinearLayout>
-
-
 </LinearLayout>
