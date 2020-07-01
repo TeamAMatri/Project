@@ -9,9 +9,9 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView rv;
-    String[] branches = {"CSE","ECE","EEE","CIVIL","MECHANICAL","IT","METALLURGY","CHEMICAL"};
+    String[] branches = {"CSE","ECE","EEE","CIVIL","MECHANICAL","IT","METALLURGY","CHEMICAL","BSH"};
     int[] images = {R.drawable.cse,R.drawable.ece,R.drawable.eee,R.drawable.civil,R.drawable.mechanical,R.drawable.it,
-            R.drawable.metallurgical, R.drawable.chemical};
+            R.drawable.metallurgical, R.drawable.chemical,R.drawable.bsh};
     MyAdapter myAdapter;
 
     @Override

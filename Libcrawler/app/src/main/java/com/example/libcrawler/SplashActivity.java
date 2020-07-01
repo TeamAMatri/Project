@@ -15,7 +15,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                startActivity(new Intent(SplashActivity.this,select.class));
                 finish();//If you dont give it here,if you click back you will be navigated to this screen again
             }
         },3000);//3000 millis is equal to 3 secs

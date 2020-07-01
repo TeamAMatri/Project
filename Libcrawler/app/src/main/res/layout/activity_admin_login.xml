@@ -43,20 +43,26 @@
                 android:fontFamily="@font/montserrat"
                 android:drawableRight="@drawable/mail"
                 android:id="@+id/adminmail"
+                android:textSize="15dp"
                 android:background="@drawable/textbox"
                 android:padding="10dp"/>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:paddingTop="15dp"
-                android:fontFamily="@font/montserrat"
-                android:id="@+id/adminpwd"
-                android:background="@drawable/textbox"
-                android:padding="10dp"/>
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#2C470D">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:id="@+id/loginpwd"
+                    android:padding="10dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/montserrat"
+                    android:background="@drawable/textbox"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
